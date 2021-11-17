@@ -1,0 +1,120 @@
+{
+    "name": "App Builder",
+    "repository": "https://github.com/samyak-jain/AgoraBackend",
+    "addons": [
+        {
+            "plan": "heroku-postgresql:hobby-dev",
+            "options": {
+                "version": "12"
+            }
+        }
+    ],
+    "env": {
+        "APP_ID": {
+            "description": "An Agora App ID. Here's how to get your app id: https://docs.agora.io/en/Agora%20Platform/token?platform=All%20Platforms#getappid"
+        },
+        "APP_CERTIFICATE": {
+            "description": "App Certificate is used by Agora to generate tokens for security. Here's how to get your app certificate: https://docs.agora.io/en/Agora%20Platform/token?platform=All%20Platforms#generate-a-token"
+        },
+        "ENABLE_GOOGLE_OAUTH": {
+            "description": "Boolean to enable Google OAuth",
+            "required": false
+        },
+        "GOOGLE_CLIENT_ID": {
+            "description": "Client ID used for Google OAuth",
+            "required": false
+        },
+        "GOOGLE_CLIENT_SECRET": {
+            "description": "Client Secret used for Google OAuth",
+            "required": false
+        },
+        "ENABLE_MICROSOFT_OAUTH": {
+            "description": "Boolean to enable Microsoft OAuth",
+            "required": false
+        },
+        "MICROSOFT_CLIENT_ID": {
+            "description": "Client ID used for Microsoft OAuth",
+            "required": false
+        },
+        "MICROSOFT_CLIENT_SECRET": {
+            "description": "Client Secret used for Microsoft OAuth",
+            "required": false
+        },
+        "ENABLE_SLACK_OAUTH": {
+            "description": "Boolean to enable Slack OAuth",
+            "required": false
+        },
+        "SLACK_CLIENT_ID": {
+            "description": "Client ID used for Slack OAuth",
+            "required": false
+        },
+        "SLACK_CLIENT_SECRET": {
+            "description": "Client Secret used for Slack OAuth",
+            "required": false
+        },
+        "ENABLE_APPLE_OAUTH": {
+            "description": "Boolean to enable Apple OAuth",
+            "required": false
+        },
+        "APPLE_CLIENT_ID": {
+            "description": "Client ID used for Apple OAuth",
+            "required": false
+        },
+        "APPLE_PRIVATE_KEY": {
+            "description": "Private Key used for Apple OAuth",
+            "required": false
+        },
+        "APPLE_KEY_ID": {
+            "description": "Key ID used for Apple OAuth",
+            "required": false
+        },
+        "APPLE_TEAM_ID": {
+            "description": "Team ID used for Apple OAuth",
+            "required": false
+        },
+        "ENCRYPTION_ENABLED": {
+            "description": "Whether to enable encryption or not",
+            "required": false
+        },
+        "CUSTOMER_ID": {
+            "description": "Required for Cloud Recording. How to get your credentials: https://docs.agora.io/en/faq/restful_authentication",
+            "required": false
+        },
+        "CUSTOMER_CERTIFICATE": {
+            "description": "Required for Cloud Recording. How to get your credentials: https://docs.agora.io/en/faq/restful_authentication",
+            "required": false
+        },
+        "BUCKET_NAME": {
+            "description": "Name of your AWS S3 Bucket. Required for Cloud Recording.",
+            "required": false
+        },
+        "RECORDING_REGION": {
+            "description": "Region of your AWS S3 Bucket. Required for Cloud Recording.",
+            "required": false
+        },
+        "BUCKET_ACCESS_KEY": {
+            "description": "Enter your AWS Access key. Required for Cloud Recording.",
+            "required": false
+        },
+        "BUCKET_ACCESS_SECRET": {
+            "description": "Enter your AWS Access secret. Required for Cloud Recording.",
+            "required": false
+        },
+        "PSTN_EMAIL": {
+            "description": "Email ID of your Turbobridge account. Required for PSTN Integration",
+            "required": false
+        },
+        "PSTN_PASSWORD": {
+            "description": "Password of your Turbobridge account. Required for PSTN Integration",
+            "required": false
+        },
+        "PSTN_ACCOUNT": {
+            "description": "Account ID of your Turbobridge account. Required for PSTN Integration",
+            "required": false
+        },
+        "SCHEME": {
+            "description": "Contains project name. Used for deep links",
+            "required": true
+        }
+    }
+}

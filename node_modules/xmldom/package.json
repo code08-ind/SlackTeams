@@ -1,0 +1,72 @@
+{
+  "name": "xmldom",
+  "version": "0.3.0",
+  "description": "A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module.",
+  "keywords": [
+    "w3c",
+    "dom",
+    "xml",
+    "parser",
+    "javascript",
+    "DOMParser",
+    "XMLSerializer"
+  ],
+  "author": "jindw <jindw@xidea.org> (http://www.xidea.org)",
+  "homepage": "https://github.com/xmldom/xmldom",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xmldom/xmldom.git"
+  },
+  "main": "lib/dom-parser.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "proof platform win32 && proof test */*/*.t.js || t/test"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "proof": "~7.0.9"
+  },
+  "maintainers": [
+    {
+      "name": "brodybits",
+      "email": "chris@brody.consulting",
+      "url": "https://github.com/brodybits"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "jindw",
+      "email": "jindw@xidea.org",
+      "url": "http://www.xidea.org"
+    },
+    {
+      "name": "Yaron Naveh",
+      "email": "yaronn01@gmail.com",
+      "web": "http://webservices20.blogspot.com/"
+    },
+    {
+      "name": "Harutyun Amirjanyan",
+      "email": "amirjanyan@gmail.com",
+      "web": "https://github.com/nightwing"
+    },
+    {
+      "name": "Alan Gutierrez",
+      "email": "alan@prettyrobots.com",
+      "web": "http://www.prettyrobots.com/"
+    },
+    {
+      "name": "Eric Newport",
+      "email": "kethinov@gmail.com",
+      "web": "https://github.com/kethinov"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/xmldom/xmldom/issues"
+  },
+  "license": "(LGPL-2.0 OR MIT)"
+}
